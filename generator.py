@@ -26,7 +26,7 @@ orders_context = {
     'index_page': False}
 
 if __name__ == "__main__":
-    site = make_site(outpath='demo', contexts=[
+    site = make_site(outpath='static', contexts=[
         ('index.html', index_context),
         ('orders.html', orders_context)])
     site.render()

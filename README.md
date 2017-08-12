@@ -7,7 +7,7 @@ Static pages were generates from templates using **staticjinja ver 0.3.0**  pack
 ```
 python3 generator.py
 ```
-Demo site pages will be created in folder `demo`.
+Demo site pages will be created in folder `static`.
 
 # Project Goals
 

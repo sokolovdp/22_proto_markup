@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Поставщики Новосибирска</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+
+    <div class="container fluid">
+    <nav class="navbar navbar-default navbar-static-top center-block">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-road"></span> Лого</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a><strong>Регион</strong>:</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="geo">Новосибирск и область</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Омск и область</a></li>
+                            <li><a href="#">Пермь и область</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><strong>Дмитрий Соколов</strong></a></li>
+                    <li><a href="#"><strong>Выход</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="container fluid text-center" style="padding-top: 1px; padding-bottom: 5px;">
+    <h5>
+        Участники в Новосибирске:&nbsp;&nbsp;<a href="#">105 оптовых компаний</a> &nbsp;&nbsp; <a href="#">25 производителей</a>
+    </h5>
+</div>
+    <div class="container fluid" style="margin: 0 auto;">
+    <div class="jumbotron" style="padding-top: 4px; padding-bottom: 4px;">
+        <form class="form-horizontal search">
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-1">
+                    <h4><strong>Я&nbsp;ищу:</strong></h4>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="zbi">ЖБИ (фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки)</label>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="brus">Кирпич / Газобетон / Брус</label>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="beton">Бетон / Раствор</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Омск и область</a></li>
+                        <li><a href="#">Пермь и область</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="orderDescription" class="col-sm-2 text-right">Описание&nbsp;*</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" rows="2" id="orderDescription" name="orderDescription"></textarea>
+                    <p class="text-muted"  style="font-size: 14px;">
+                        Пример: нужно фбс 24.4.6 50шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userPhone" class="col-sm-2 text-right control-label">Телефон&nbsp;*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="userPhone" name="userPhone" placeholder="Контактный телефон">
+                </div>
+                    <label for="userName" class="col-sm-2 text-right control-label">Имя</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="userName" name="userName" placeholder="Имя и фамилия">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Опубликовать заявку</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="container fluid text-center">
+    
+        <h3>Свежие&nbsp;заявки</h3>
+    
+    <nav class="navbar navbar-default navbar-static-top center-block">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a><strong>Раздел</strong>:</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="geo">Все</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Мониторы</a></li>
+                            <li><a href="#">ПК и комплектующие</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a><strong>Регион</strong>:</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="geo">Новосибирск и область</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Омск и область</a></li>
+                            <li><a href="#">Пермь и область</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="container fluid" style="margin: 0 auto;">
+    
+        <p>Вчера, в 21:30<a class="pull-right text-uppercase" href="#">В закладки</a></p>
+        <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+        <p>Алексей</p>
+        <p>
+            <a class="pull-left" href="#">Показать телефон</a>
+            <a class="pull-right" href="#">12 просмотров</a>
+        </p>
+        <br>
+        <hr>
+    
+        <p>Вчера, в 21:30<a class="pull-right text-uppercase" href="#">В закладки</a></p>
+        <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+        <p>Алексей</p>
+        <p>
+            <a class="pull-left" href="#">Показать телефон</a>
+            <a class="pull-right" href="#">12 просмотров</a>
+        </p>
+        <br>
+        <hr>
+    
+        <p>Вчера, в 21:30<a class="pull-right text-uppercase" href="#">В закладки</a></p>
+        <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+        <p>Алексей</p>
+        <p>
+            <a class="pull-left" href="#">Показать телефон</a>
+            <a class="pull-right" href="#">12 просмотров</a>
+        </p>
+        <br>
+        <hr>
+    
+</div>
+
+    <div class="container fluid">
+    
+        <div class="row text-center">
+            <a class="btn btn-lg btn-primary" href="orders.html" role="button">Посмотреть все заявки</a>
+        </div>
+    
+</div>
+    <div class="container fluid" style="padding-top: 15px; padding-bottom: 15px;">
+    <div id="commentCarousel" class="col-sm-7 col-sm-offset-1 carousel" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            
+                
+                    <div class="item active">
+                        <div class="panel panel-default col-sm-10 col-sm-offset-1">
+                            <div class="panel-heading">
+                                № 1:&nbsp; Кирилл&nbsp;29&nbsp;лет, г.Барабинск
+                            </div>
+                            <div class="panel-body">Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! </div>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="panel panel-default col-sm-10 col-sm-offset-1">
+                            <div class="panel-heading">
+                                № 2:&nbsp; Кирилл&nbsp;29&nbsp;лет, г.Барабинск
+                            </div>
+                            <div class="panel-body">Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! </div>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="item">
+                        <div class="panel panel-default col-sm-10 col-sm-offset-1">
+                            <div class="panel-heading">
+                                № 3:&nbsp; Кирилл&nbsp;29&nbsp;лет, г.Барабинск
+                            </div>
+                            <div class="panel-body">Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! Бла бла... мне помогло, все супер! </div>
+                        </div>
+                    </div>
+                
+            
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#commentCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#commentCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg">Оставить отзыв</button>
+    </div>
+</div>
+    <div class="jumbotron" style="padding: 2px;">
+    <div class="container-fluid">
+        <div class="row row-custom">
+            <h3 class="text-center">Вы поставщик?</h3>
+            <div class="col-sm-5 col-sm-offset-1">
+                <p style="font-size: 16px;">
+                    Для доступа к телефонам покупателей заполните форму или позвоните нам:
+                    <strong>+7&nbsp;999&nbsp;888-77-66</strong>
+                </p>
+                <p style="font-size: 16px;">
+                    Текст с дополнительной информацией по условиям сотрудничества
+                    Возможно стоит вынести его на отдельную страницу.
+                    Текст с дополнительной информацией по условиям сотрудничеаства.
+                    Возможно стоит вынести его на отдельную страницу.
+                </p>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+                <form class="form-horizontal">   <!--action="post"-->
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <label class="control-label col-sm-4">Организация</label>
+                            <input id="organization" name="organization" type="text" class="input-sm col-sm-8">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <label class="control-label col-sm-4">Телефон</label>
+                            <input id="phoneNumber" name="phoneNumber" type="text" class="input-sm col-sm-8">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <label class="control-label col-sm-4" >E-mail</label>
+                            <input id="eMail" name="eMail" type="text" class="input-sm col-sm-8">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <label class="control-label col-sm-4">Ваше имя</label>
+                            <input id="supplierName" name="supplierName" type="text" class="input-sm col-sm-8">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 margin-bottom">
+                            <button type="submit" class="btn btn-primary btn-lg">Отправить информацию</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
