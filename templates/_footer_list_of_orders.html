@@ -1,0 +1,24 @@
+<div class="container fluid">
+    {% if index_page %}
+        <div class="row text-center">
+            <a class="btn btn-lg btn-primary" href="orders.html" role="button">Посмотреть все заявки</a>
+        </div>
+    {% else %}
+         <div class="row text-center">
+            <a class="btn btn-lg btn-primary" href="orders.html" role="button">Показать еще заявки</a>
+         </div>
+         <div class="row text-center">
+             <ul class="pagination">
+                 <li><a href="#"><strong>&lt;</strong></a></li>
+                 {% for n in range(pages) %}
+                    {% if n == 0 %}
+                        <li class="active"><a href="#">{{n+1}}</a></li>
+                    {% else %}
+                        <li><a href="#">{{n+1}}</a></li>
+                    {% endif %}
+                 {% endfor %}
+                 <li><a href="#"><strong>&gt;</strong></a></li>
+             </ul>
+         </div>
+    {% endif %}
+</div>

@@ -1,0 +1,14 @@
+<div class="container fluid" style="margin: 0 auto;">
+    {% for order in orders %}
+        <p>{{order.time}}<a class="pull-right text-uppercase" href="#">В закладки</a></p>
+        <p>{{order.text}}</p>
+        <p>{{order.name}}</p>
+        <p>
+            <a class="pull-left" href="#">Показать телефон</a>
+            <a class="pull-right" href="#">{{order.views}} просмотров</a>
+        </p>
+        <br>
+        <hr>
+    {% endfor %}
+</div>
+

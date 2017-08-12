@@ -1,0 +1,59 @@
+<div class="container fluid" style="margin: 0 auto;">
+    <div class="jumbotron" style="padding-top: 4px; padding-bottom: 4px;">
+        <form class="form-horizontal search">
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-1">
+                    <h4><strong>Я&nbsp;ищу:</strong></h4>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="zbi">ЖБИ (фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки)</label>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="brus">Кирпич / Газобетон / Брус</label>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="beton">Бетон / Раствор</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ region }}<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Омск и область</a></li>
+                        <li><a href="#">Пермь и область</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="orderDescription" class="col-sm-2 text-right">Описание&nbsp;*</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" rows="2" id="orderDescription" name="orderDescription"></textarea>
+                    <p class="text-muted"  style="font-size: 14px;">
+                        Пример: нужно фбс 24.4.6 50шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userPhone" class="col-sm-2 text-right control-label">Телефон&nbsp;*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="userPhone" name="userPhone" placeholder="Контактный телефон">
+                </div>
+                    <label for="userName" class="col-sm-2 text-right control-label">Имя</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="userName" name="userName" placeholder="Имя и фамилия">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Опубликовать заявку</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container fluid text-center">
+    {% if index_page %}
+        <h3>Свежие&nbsp;заявки</h3>
+    {% else %}
+        <h3 class="text uppercase">Заявки</h3>
+    {% endif %}
+    <nav class="navbar navbar-default navbar-static-top center-block">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a><strong>Раздел</strong>:</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="geo">Все</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Мониторы</a></li>
+                            <li><a href="#">ПК и комплектующие</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a><strong>Регион</strong>:</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="geo">{{ region }}</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Омск и область</a></li>
+                            <li><a href="#">Пермь и область</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
