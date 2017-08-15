@@ -21,7 +21,7 @@ index_context = {
 
 orders_context = {
     'region': 'Новосибирск и область',
-    'orders': [sample_order] * 11,
+    'orders': [sample_order] * 7,
     'pages':  11,
     'index_page': False}
 
