@@ -2,6 +2,11 @@
 
 Frontend static demo site["Suppliers of Novosibirsk"](https://sokolovdp.github.io)
 Static pages were generates from templates using **staticjinja ver 0.3.0**  package. 
+To install package run:
+```
+pip install -r requirements.txt
+```
+
 
 # How to launch site generator:
 ```

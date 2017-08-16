@@ -22,7 +22,7 @@ index_context = {
 orders_context = {
     'region': 'Новосибирск и область',
     'orders': [sample_order] * 7,
-    'pages':  11,
+    'pages':  5,
     'index_page': False}
 
 if __name__ == "__main__":
